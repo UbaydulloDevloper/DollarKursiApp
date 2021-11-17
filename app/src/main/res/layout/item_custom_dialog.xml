@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E6006171"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/name_volute_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Ccy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="USA"
+        android:textColor="#06D30F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_volute_about" /> <!--Ccy-->
+
+    <EditText
+        android:id="@+id/volute_countitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#06D30F"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/Ccy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_volute_about" /> <!--count-->
+
+    <TextView
+        android:id="@+id/uzb_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="UZB"
+        android:textColor="#CFB401"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Ccy"
+        app:layout_constraintStart_toStartOf="@+id/Ccy"
+        app:layout_constraintTop_toBottomOf="@id/Ccy" />
+
+    <TextView
+        android:id="@+id/Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:padding="10dp"
+        android:textColor="#CFB401"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/volute_countitem"
+        app:layout_constraintLeft_toRightOf="@id/uzb_text"
+        app:layout_constraintTop_toBottomOf="@id/volute_countitem" /> <!--Rate-->
+
+
+    <TextView
+        android:id="@+id/CcyNm_EN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CcyNm_EN:"
+        android:textColor="#06D30F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uzb_text" /><!--CcyNm_EN-->
+
+    <TextView
+        android:id="@+id/CcyNm_EN_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#06D30F"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/CcyNm_EN"
+        app:layout_constraintStart_toStartOf="@+id/Rate"
+        app:layout_constraintTop_toBottomOf="@id/Rate" />
+
+    <TextView
+        android:id="@+id/CcyNm_RU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CcyNm_RU:"
+        android:textColor="#CFB401"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/CcyNm_EN"
+        app:layout_constraintStart_toStartOf="@+id/CcyNm_EN"
+        app:layout_constraintTop_toBottomOf="@id/CcyNm_EN" /><!--CcyNm_RU-->
+
+    <TextView
+        android:id="@+id/CcyNm_RU_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:padding="10dp"
+        android:textColor="#CFB401"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toRightOf="@id/CcyNm_EN"
+        app:layout_constraintStart_toStartOf="@+id/CcyNm_EN_name"
+        app:layout_constraintTop_toBottomOf="@id/CcyNm_EN_name" />
+
+    <TextView
+        android:id="@+id/CcyNm_UZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CcyNm_UZ:"
+        android:textColor="#CFB401"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/CcyNm_RU"
+        app:layout_constraintStart_toStartOf="@+id/CcyNm_RU"
+        app:layout_constraintTop_toBottomOf="@id/CcyNm_RU" /><!--CcyNm_RU-->
+
+    <TextView
+        android:id="@+id/CcyNm_UZ_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:padding="10dp"
+        android:textColor="#CFB401"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/CcyNm_EN"
+        app:layout_constraintStart_toStartOf="@+id/CcyNm_RU_count"
+        app:layout_constraintTop_toBottomOf="@id/CcyNm_RU_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
